@@ -1,20 +1,31 @@
 import Game from './../src/js/game.js';
 
 describe('Game', () => {
+  const game = new Game(); 
 
   test('Create the game object using the Game constructor',() => {
-    const game = new Game(); 
     expect(game)
   })
 
   test('Create the game object filled with correct keys & values',() => {
-    const game = new Game(); 
     const expected = [];
     expect(game.players).toEqual(expect.arrayContaining(expected));
     expect(game.monsters).toEqual(expect.arrayContaining(expected));
     expect(game.distance).toEqual(0);
-
   })
-  
+
+    test("Create prototype for the this.roll and get random number", () => {
+      const roll = game.roll(12);
+      expect(roll).not.toEqual(0);
+  })
+
+  // test("Create prototype for the this.move", () => {
+  //   expect(game.move)
+  // })
+
+  // test("change distance by running game.move", () => {
+  //   game.move()
+  //   expect(game.distance).toEqual(0);
+  // })
 });
 
