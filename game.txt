@@ -4,6 +4,7 @@ Player
 ======
 Health
 Attack
+Armor
 
 Monster
 ======
@@ -14,4 +15,38 @@ Move
 ====
 20% of being attacked by a Monster
 
+Battle
 
+
+
+
+
+
+
+
+
+Hello! Welcome to Stranger Things RPG!  Enter your name:
+
+The Great Gandor entered the beautiful shire of Steppenwolf on his journey to defeat his dragon.
+
+Roll to move: roll()
+You rolled __.  You move __ 
+
+You encountered monster.  What do you do?
+flee or Attack
+
+ATTACK Your health down to __
+    Would you like to attack or flee
+        Would you like to attack or flee
+OUTCOME: Health lower, armor higher
+
+
+FLEE Your helath went down to __
+
+
+
+
+
+
+
+YOU DIED.  GAME OVER.
