@@ -6,3 +6,5 @@ export default class Player {
     this.attack = 20;
   }
 }
+
+const player1 = new Player("Brentimous Maximus")

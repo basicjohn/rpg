@@ -5,7 +5,7 @@ describe('Player', () => {
 
   test('should create a Player object',() => {
     const player = new Player();
-    expect(player1)
+    expect(player)
   })
 
 });
