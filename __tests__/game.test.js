@@ -11,7 +11,8 @@ describe('Game', () => {
     const game = new Game(); 
     const expected = [];
     expect(game.players).toEqual(expect.arrayContaining(expected));
-    expect(game.distance).toEqual(1);
+    expect(game.monsters).toEqual(expect.arrayContaining(expected));
+    expect(game.distance).toEqual(0);
 
   })
   

@@ -3,6 +3,7 @@ export default class Game {
     this.players = [];
     this.monsters = [];
     this.distance = 0;
+    this.move = ();
   }
 }
 
