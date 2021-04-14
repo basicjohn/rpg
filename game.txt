@@ -1,0 +1,17 @@
+Basic Version
+
+Player
+======
+Health
+Attack
+
+Monster
+======
+Health
+Attack
+
+Move
+====
+20% of being attacked by a Monster
+
+
