@@ -1,15 +1,14 @@
 // import Block from './../src/sudoku.js';
-import Player from './../src/player.js';
+import Player from './../src/js/player.js';
 
-Describe('Player', () => {
+describe('Player', () => {
 
   test('should create a Player object',() => {
     const player = new Player();
+    expect(player1)
   })
 
-}
-
-)
+});
 
 
 // describe('Block', () => {
