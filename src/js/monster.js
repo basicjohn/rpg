@@ -1,6 +1,6 @@
 
 export default class Monster {
-  constructor() {
+  constructor(name) {
     this.name = name;
     this.health = 100;
     this.armor = 0;

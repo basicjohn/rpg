@@ -23,12 +23,19 @@ export default class Game {
   addPlayer(player) {
     this.players.push(player);
   }
+  addMonster(monster) {
+    this.monsters.push(monster);
+  }
 
 };
 
 export function createGame(Game) {
-const player = new Player("Brentimous Maximus");
-const game = new Game();
-game.addPlayer(player);
-return game;
+  const player = new Player("Brentimous Maximus");
+  const monster = new Monster("Giant Spider");
+  const game = new Game();
+  
+  game.addMonster(monster);
+  game.addPlayer(player);
+  return game;
+
 }

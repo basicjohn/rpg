@@ -33,9 +33,17 @@ describe('Game', () => {
 
 
 describe('createGame', () => {
+  const game = createGame(Game);
+
+  test('Create the game and test for distance', () => {
+    expect(game.distance).toEqual(0);
+  })
 
   test('Create the game and add first play using createGame function', () => {
-    createGame(Game);
-    expect(Game);
+    expect(game.players[0].name).toMatch("Brentimous Maximus");
+  })
+
+  test('See if the Giant Spider has been created', () => {
+    expect(game.monsters[0].name).toMatch("Giant Spider!");
   })
 });

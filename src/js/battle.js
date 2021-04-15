@@ -4,7 +4,8 @@ export default class Battle {
     this.monster = [];
   }
 
-  //   addPlayer() {
-  // this.player = 
-  //   }
+  createBattle(player, monster) {
+    this.player =  player;
+    this.monster = monster;
+  }
 }
