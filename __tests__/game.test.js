@@ -8,24 +8,23 @@ describe('Game', () => {
   })
 
   test('Create the game object filled with correct keys & values',() => {
-    const expected = [];
-    expect(game.players).toEqual(expect.arrayContaining(expected));
-    expect(game.monsters).toEqual(expect.arrayContaining(expected));
+    expect(game.players).toEqual([]);
+    expect(game.monsters).toEqual([]);
     expect(game.distance).toEqual(0);
   })
 
-    test("Create prototype for the this.roll and get random number", () => {
-      const roll = game.roll(12);
-      expect(roll).not.toEqual(0);
+  test("Create prototype for the this.roll and get random number", () => {
+    const roll = game.roll(12);
+    expect(roll).not.toEqual(0);
   })
 
-  // test("Create prototype for the this.move", () => {
-  //   expect(game.move)
-  // })
+  test("Create prototype for the this.move", () => {
+    expect(game.move)
+  })
 
-  // test("change distance by running game.move", () => {
-  //   game.move()
-  //   expect(game.distance).toEqual(0);
-  // })
+  test("change distance by running game.move", () => {
+    game.move()
+    expect(game.distance).not.toEqual(0);
+  })
 });
 
