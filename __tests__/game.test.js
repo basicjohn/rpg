@@ -44,6 +44,6 @@ describe('createGame', () => {
   })
 
   test('See if the Giant Spider has been created', () => {
-    expect(game.monsters[0].name).toMatch("Giant Spider!");
+    expect(game.monsters[0].name).toMatch("Giant Spider");
   })
 });
