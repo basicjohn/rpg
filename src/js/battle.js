@@ -1,5 +1,7 @@
 export default class Battle {
+
   constructor(){
-    this.
+    this.player = [];
+    this.monster = [];
   }
 }

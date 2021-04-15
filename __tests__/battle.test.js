@@ -7,9 +7,9 @@ describe('Battle', () => {
     expect(battle)
   })
 
-  test ('Create the Battle objest filled with correct keys and values', () => {
-expect(.....).toEqual([]);
-expect(.....).toEqual([]);
-expect(.....).toEqual([]);
+  test ('Create the Battle object filled with correct keys and values', () => {
+    expect(battle.player).toEqual([1]);
+    expect(battle.monster).toEqual([1]);
+   
   })
 });
