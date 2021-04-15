@@ -1,3 +1,6 @@
+import Player from './player.js'
+import Monster from './monster.js'
+import Battle from './battle.js'
 
 export default class Game {
   constructor() {
@@ -5,7 +8,6 @@ export default class Game {
     this.monsters = [];
     this.distance = 0;
     this.maxDistance = 300;
-
   }
   // Getter
   move() {
@@ -18,4 +20,15 @@ export default class Game {
     return currentRoll;
   }
 
+  addPlayer(player) {
+    this.players.push(player);
+  }
+
 };
+
+export function createGame(Game) {
+const player = new Player("Brentimous Maximus");
+const game = new Game();
+game.addPlayer(player);
+return game;
+}

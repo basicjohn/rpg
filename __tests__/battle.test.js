@@ -8,8 +8,8 @@ describe('Battle', () => {
   })
 
   test ('Create the Battle object filled with correct keys and values', () => {
-    expect(battle.player).toEqual([1]);
-    expect(battle.monster).toEqual([1]);
+    expect(battle.player).toEqual([]);
+    expect(battle.monster).toEqual([]);
    
   })
 });

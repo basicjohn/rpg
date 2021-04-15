@@ -1,13 +1,14 @@
 import Game from './../src/js/game.js';
+import { createGame } from './../src/js/game.js';
 
 describe('Game', () => {
-  const game = new Game(); 
+  const game = new Game();
 
-  test('Create the game object using the Game constructor',() => {
+  test('Create the game object using the Game constructor', () => {
     expect(game)
   })
 
-  test('Create the game object filled with correct keys & values',() => {
+  test('Create the game object filled with correct keys & values', () => {
     expect(game.players).toEqual([]);
     expect(game.monsters).toEqual([]);
     expect(game.distance).toEqual(0);
@@ -26,5 +27,15 @@ describe('Game', () => {
     game.move()
     expect(game.distance).not.toEqual(0);
   })
+
 });
 
+
+
+describe('createGame', () => {
+
+  test('Create the game and add first play using createGame function', () => {
+    createGame(Game);
+    expect(Game);
+  })
+});

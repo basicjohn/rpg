@@ -4,10 +4,14 @@ import Player from './../src/js/player.js';
 describe('Player', () => {
 
   test('should create a Player object',() => {
-    const player = new Player();
-    expect(player)
+    const player = new Player("Brentimous Maximus");
+    expect(player);
+    expect(player.name).toMatch("Brentimous Maximus");
   })
 
+  // test('should create a new player', () => {
+    
+  // })
 });
 
 

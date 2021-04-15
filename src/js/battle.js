@@ -1,7 +1,10 @@
 export default class Battle {
-
-  constructor(){
+  constructor() {
     this.player = [];
     this.monster = [];
   }
+
+  //   addPlayer() {
+  // this.player = 
+  //   }
 }

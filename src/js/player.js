@@ -1,3 +1,4 @@
+
 export default class Player {
   constructor(name) {
     this.name = name;
@@ -7,4 +8,4 @@ export default class Player {
   }
 }
 
-const player1 = new Player("Brentimous Maximus")
+
